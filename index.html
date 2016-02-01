@@ -106,7 +106,7 @@
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
-					<form id="emailForm" method="post" action="https://maker.ifttt.com/trigger/send_email/with/key/chSzc8bv45-zIYBdbVG2Jp">
+					<form id="emailForm" method="post" action="https://api.moaswift.no/email">
 						<div class="row uniform">
 							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -138,28 +138,28 @@
 $(function() {
  // Attach a submit handler to the form
  $( "#emailForm" ).submit(function( event ) {
- 
+
   // Stop form from submitting normally
   event.preventDefault();
- 
+
   // Get some values from elements on the page:
   var $form = $( this ),
     name = $form.find( "input[name='name']" ).val(),
     email = $form.find( "input[name='email']" ).val(),
     message = $form.find( "textarea[name='message']" ).val(),
     url = $form.attr( "action" );
- 
-  // Show a simple thanks 
+
+  // Show a simple thanks
   $("#emailRecipient").html(name);
   $("#thanks").fadeIn("fast")
- 
-  // Send the data using post  
+
+  // Send the data using post
   var posting = $.post( url, { value1: name, value2: email, value3: message} );
- 
+
   // Put the results in a div
   posting.done(function( data ) {
     //remove the thanks message
-    $("#thanks").fadeOut("slow"); 
+    $("#thanks").fadeOut("slow");
   });
  });
 });
