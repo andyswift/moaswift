@@ -2,9 +2,9 @@
   "name": "moaswift",
   "version": "1.0.0",
   "description": "Simple server for providing moaswift.no with some functionality",
-  "main": "server/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
