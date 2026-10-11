@@ -38,12 +38,12 @@ sync() { aws s3 sync "$SRC" "s3://$BUCKET" --region "$REGION" --delete "$@"; }
 run_passes() {
   local extra=("$@")
   # 1. fonts: long cache, correct content type
-  sync "${extra[@]}" --exclude "*" --include "*.woff2" --content-type "font/woff2" --cache-control "$IMMUTABLE"
+  sync ${extra[@]+"${extra[@]}"} --exclude "*" --include "*.woff2" --content-type "font/woff2" --cache-control "$IMMUTABLE"
   # 2. hashed game bundles: long cache
-  sync "${extra[@]}" --exclude "*" --include "invaders/assets/*" --cache-control "$IMMUTABLE"
+  sync ${extra[@]+"${extra[@]}"} --exclude "*" --include "invaders/assets/*" --cache-control "$IMMUTABLE"
   # 3. everything else: short cache; removes the old 2017 template files.
   #    favicon.ico already lives in the bucket and has no counterpart in the repo, so keep it.
-  sync "${extra[@]}" --exclude "*.woff2" --exclude "invaders/assets/*" --exclude "favicon.ico" \
+  sync ${extra[@]+"${extra[@]}"} --exclude "*.woff2" --exclude "invaders/assets/*" --exclude "favicon.ico" \
        --exclude ".DS_Store" --exclude "Dockerfile" --cache-control "$SHORT"
 }
 
