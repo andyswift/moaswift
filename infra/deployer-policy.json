@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListTheSiteBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:GetBucketLocation"],
+      "Resource": "arn:aws:s3:::moaswift"
+    },
+    {
+      "Sid": "ReadWriteSiteObjects",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::moaswift/*"
+    },
+    {
+      "Sid": "ClearTheCacheForThisSiteOnly",
+      "Effect": "Allow",
+      "Action": ["cloudfront:CreateInvalidation", "cloudfront:GetInvalidation", "cloudfront:ListInvalidations"],
+      "Resource": "arn:aws:cloudfront::<ACCOUNT_ID>:distribution/E1MUDCSWW05U01"
+    }
+  ]
+}
