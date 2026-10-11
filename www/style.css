@@ -82,7 +82,8 @@ h2 { font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05; letter-spacing: -0.
 .card i { display: block; width: 44px; height: 44px; border-radius: 50%; margin-bottom: 18px; }
 .card h3 { font-size: 24px; letter-spacing: -0.02em; margin-bottom: 8px; }
 .card p { margin: 0; font-size: 17px; line-height: 1.55; }
-.band .btn { margin-top: 40px; }
+.band .actions { margin-top: 40px; }
+.band .btn.ghost { background: none; color: var(--ink); border: 2px solid var(--ink); padding: 14px 28px; }
 
 /* music */
 .music { display: flex; flex-wrap: wrap; gap: 32px; align-items: center; }

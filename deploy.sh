@@ -44,7 +44,7 @@ run_passes() {
   # 3. everything else: short cache; removes the old 2017 template files.
   #    favicon.ico already lives in the bucket and has no counterpart in the repo, so keep it.
   sync ${extra[@]+"${extra[@]}"} --exclude "*.woff2" --exclude "invaders/assets/*" --exclude "favicon.ico" \
-       --exclude ".DS_Store" --exclude "Dockerfile" --cache-control "$SHORT"
+       --exclude ".DS_Store" --exclude "Dockerfile" --exclude "invaders-3d/*" --cache-control "$SHORT"
 }
 
 echo "== Plan: $SRC -> s3://$BUCKET (distribution $DISTRIBUTION)"
