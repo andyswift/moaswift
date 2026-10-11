@@ -75,6 +75,12 @@ h1 span { background: linear-gradient(transparent 60%, var(--marigold) 60% 92%, 
 /* sections */
 .band { padding: 88px 0; }
 .band.sand { background: var(--sand); }
+.band.dark { background: #14060d; color: var(--cream); }
+.band.dark h2 { color: #ff6b81; }
+.band.dark p { color: #e9d9cf; }
+.band.dark .card { background: #2a0d18; }
+.band.dark .card p { color: #e9d9cf; }
+.band.dark .btn { background: #ff3b5c; color: #14060d; }
 h2 { font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05; letter-spacing: -0.03em; }
 .band p { font-size: 20px; line-height: 1.55; margin: 20px 0 0; color: var(--body); max-width: 640px; }
 .cards { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 44px; }
