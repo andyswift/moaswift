@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#FFB07A">
+  <meta name="description" content="California Tetris: handheld-style falling blocks, sunset palms and a lo-fi hip-hop soundtrack.">
+  <title>Cali Tetris</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script type="module" crossorigin src="./assets/index-DdbO0i5W.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Dbjmu9Hm.css">
+</head>
+<body>
+  <div id="stage" class="stage" data-theme="0" data-screen="title">
+    <div class="scene" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="sea"></div>
+      <div class="stripe s1"></div><div class="stripe s2"></div><div class="stripe s3"></div>
+      <svg class="palm palm-l" viewBox="0 0 260 720"><use href="#palm"/></svg>
+      <svg class="palm palm-r" viewBox="0 0 260 720"><use href="#palm"/></svg>
+    </div>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <g id="palm">
+          <path d="M120 720 C 126 560 112 420 150 250 L 164 252 C 132 420 150 560 150 720 Z"/>
+          <path d="M156 250 C 110 190 50 200 10 250 C 60 228 110 226 156 262 Z"/>
+          <path d="M156 250 C 130 170 80 130 30 130 C 86 150 120 190 156 262 Z"/>
+          <path d="M158 250 C 170 170 210 120 262 112 C 214 146 190 190 160 262 Z"/>
+          <path d="M158 252 C 210 214 250 220 270 262 C 226 244 196 246 160 266 Z"/>
+          <path d="M156 250 C 150 190 150 150 170 100 C 172 160 170 200 160 262 Z"/>
+        </g>
+      </defs>
+    </svg>
+
+    <!-- game screen -->
+    <header class="masthead">
+      <h1>CALI TETRIS</h1>
+      <p>VENICE BEACH EDITION</p>
+    </header>
+
+    <main class="handheld">
+      <div class="handheld-top">
+        <div class="well"><canvas id="field" width="880" height="1584" aria-label="Playfield"></canvas></div>
+        <div class="panel">
+          <div class="box"><span class="lbl">SCORE</span><b id="score">000000</b></div>
+          <div class="box"><span class="lbl">LEVEL</span><b id="level">00</b></div>
+          <div class="box"><span class="lbl">LINES</span><b id="lines">000</b></div>
+          <div class="box"><span class="lbl">NEXT</span><canvas id="next" width="320" height="160" aria-label="Next piece"></canvas></div>
+        </div>
+      </div>
+      <div class="handheld-foot">
+        <span class="keys">◀ ▶ MOVE · ▼ DROP · Z X TURN</span>
+        <span class="dots"><i class="dot-r"></i><i class="dot-t"></i></span>
+      </div>
+    </main>
+
+    <div class="touch" aria-label="Touch controls">
+      <div class="pad">
+        <button data-k="left" aria-label="Move left">◀</button>
+        <button data-k="down" aria-label="Soft drop">▼</button>
+        <button data-k="right" aria-label="Move right">▶</button>
+      </div>
+      <div class="meta">
+        <button data-k="pause" class="pill">PAUSE</button>
+        <button data-k="mute" class="pill">MUSIC</button>
+      </div>
+      <div class="pad ab">
+        <button data-k="b" aria-label="Rotate counter-clockwise">B</button>
+        <button data-k="a" aria-label="Rotate clockwise">A</button>
+      </div>
+    </div>
+
+    <!-- title screen -->
+    <section class="screen title" id="title">
+      <div class="logo">
+        <div class="l1">CALI</div>
+        <div class="l2">TETRIS</div>
+        <div class="sub">VENICE BEACH EDITION</div>
+      </div>
+      <div class="levelbox">
+        <div class="lbl">START LEVEL</div>
+        <div class="levels" id="levels"></div>
+      </div>
+      <button class="press" id="start">PRESS ENTER</button>
+      <p class="help">◀ ▶ MOVE · ▼ DROP · Z X TURN · P PAUSE · M MUSIC</p>
+    </section>
+
+    <!-- game over -->
+    <section class="screen over" id="over">
+      <div class="card">
+        <div class="go">GAME<br>OVER</div>
+        <div class="sub">SUN'S DOWN</div>
+        <div class="stats">
+          <div class="box"><span class="lbl">SCORE</span><b id="o-score">000000</b></div>
+          <div class="box"><span class="lbl">BEST</span><b id="o-best">000000</b></div>
+          <div class="box"><span class="lbl">LEVEL</span><b id="o-level">00</b></div>
+          <div class="box"><span class="lbl">LINES</span><b id="o-lines">000</b></div>
+        </div>
+        <button class="press small" id="again">PRESS ENTER</button>
+        <div class="sub small">TO PADDLE BACK OUT</div>
+      </div>
+    </section>
+
+    <!-- pause -->
+    <section class="screen pause" id="pause">
+      <div class="card"><div class="go sm">PAUSED</div><div class="sub small">PRESS P TO RESUME</div></div>
+    </section>
+  </div>
+</body>
+</html>

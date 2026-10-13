@@ -39,11 +39,11 @@ run_passes() {
   local extra=("$@")
   # 1. fonts: long cache, correct content type
   sync ${extra[@]+"${extra[@]}"} --exclude "*" --include "*.woff2" --content-type "font/woff2" --cache-control "$IMMUTABLE"
-  # 2. hashed game bundles (invaders, monsters): long cache
-  sync ${extra[@]+"${extra[@]}"} --exclude "*" --include "invaders/assets/*" --include "monsters/assets/*" --cache-control "$IMMUTABLE"
+  # 2. hashed game bundles (invaders, monsters, tetris): long cache
+  sync ${extra[@]+"${extra[@]}"} --exclude "*" --include "invaders/assets/*" --include "monsters/assets/*" --include "tetris/assets/*" --exclude "*.woff2" --cache-control "$IMMUTABLE"
   # 3. everything else: short cache; removes the old 2017 template files.
   #    favicon.ico already lives in the bucket and has no counterpart in the repo, so keep it.
-  sync ${extra[@]+"${extra[@]}"} --exclude "*.woff2" --exclude "invaders/assets/*" --exclude "monsters/assets/*" --exclude "favicon.ico" \
+  sync ${extra[@]+"${extra[@]}"} --exclude "*.woff2" --exclude "invaders/assets/*" --exclude "monsters/assets/*" --exclude "tetris/assets/*" --exclude "favicon.ico" \
        --exclude ".DS_Store" --exclude "Dockerfile" --exclude "invaders-3d/*" --cache-control "$SHORT"
 }
 
