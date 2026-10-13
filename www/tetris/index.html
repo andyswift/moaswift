@@ -7,8 +7,8 @@
   <meta name="description" content="California Tetris: handheld-style falling blocks, sunset palms and a lo-fi hip-hop soundtrack.">
   <title>Cali Tetris</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <script type="module" crossorigin src="./assets/index-Dk72x5fN.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DXoLlU3l.css">
+  <script type="module" crossorigin src="./assets/index-Ch-SrWVd.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B7Ws-7nh.css">
 </head>
 <body>
   <div id="stage" class="stage" data-theme="0" data-screen="title">
@@ -56,18 +56,20 @@
     </main>
 
     <div class="touch" aria-label="Touch controls">
-      <div class="pad">
-        <button data-k="left" aria-label="Move left">◀</button>
-        <button data-k="down" aria-label="Soft drop">▼</button>
-        <button data-k="right" aria-label="Move right">▶</button>
+      <div class="dpad" role="group" aria-label="Directional pad">
+        <button class="arm up" data-d="up" aria-label="Rotate clockwise">▲</button>
+        <button class="arm left" data-d="left" aria-label="Move left">◀</button>
+        <i class="mid" aria-hidden="true"></i>
+        <button class="arm right" data-d="right" aria-label="Move right">▶</button>
+        <button class="arm down" data-d="down" aria-label="Soft drop">▼</button>
+      </div>
+      <div class="ab">
+        <button data-k="b" aria-label="Rotate counter-clockwise">B</button>
+        <button data-k="a" aria-label="Rotate clockwise">A</button>
       </div>
       <div class="meta">
         <button data-k="pause" class="pill">PAUSE</button>
         <button data-k="mute" class="pill">MUSIC</button>
-      </div>
-      <div class="pad ab">
-        <button data-k="b" aria-label="Rotate counter-clockwise">B</button>
-        <button data-k="a" aria-label="Rotate clockwise">A</button>
       </div>
     </div>
 
