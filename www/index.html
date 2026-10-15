@@ -28,6 +28,9 @@
       <a href="#tetris">Tetris</a>
       <a href="#memes">Memes</a>
       <a href="#mixer">The mixer</a>
+      <a href="#synth">MOA-1</a>
+      <a href="#poly">MOA-6</a>
+      <a href="#drums">MOA-DR</a>
       <a href="#pipe">Pipe</a>
       <a href="#lynch">Lynch 106</a>
       <a href="#df2">DF2</a>
@@ -134,10 +137,10 @@
 <section class="band sand" id="mixer">
   <div class="wrap">
     <h2>A little studio in your browser.</h2>
-    <p>A mixing console with a mono synth, a six-voice poly synth and a drum machine, all running live in the page. Press Start audio, play the keys and build a beat.</p>
+    <p>A mixing console that listens to the other tabs. Open the synths and the drum machine on their own pages, press Start audio on each, and their sound arrives on the mixer's channel strips, ready for EQ, effects and a mix. It all runs live in your browser, with nothing to install.</p>
     <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Three instruments</h3><p>A mono synth, a six-voice poly synth and a 909-style drum machine with a 16-step sequencer.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>A proper mixer</h3><p>Eight channels with EQ, six aux sends and three stereo buses.</p></div>
+      <div class="card"><i style="background:var(--coral)"></i><h3>Your tabs, wired up</h3><p>Every instrument page sends its sound to the mixer over the browser itself. Close a tab and the strip waits for it to come back.</p></div>
+      <div class="card"><i style="background:var(--marigold)"></i><h3>A proper mixer</h3><p>Eight mono channels and four stereo inputs with EQ, six aux sends and three stereo buses, plus reverb, delay, granular, a bus compressor that ducks to the kick, and Ouroboros.</p></div>
       <div class="card"><i style="background:var(--teal)"></i><h3>Plays with MIDI</h3><p>Connect a MIDI keyboard or controller in Chrome or Edge. It follows MIDI clock too.</p></div>
     </div>
     <div class="actions">
@@ -146,7 +149,52 @@
   </div>
 </section>
 
-<section class="band dark" id="pipe">
+<section class="band dark" id="synth">
+  <div class="wrap">
+    <h2>MOA-1.</h2>
+    <p>A mono synthesizer with a big keyboard, patch memories and a front panel full of things to turn. Play it on its own, or let it send its sound to the mixer in another tab.</p>
+    <div class="cards">
+      <div class="card"><i style="background:var(--coral)"></i><h3>Fat and simple</h3><p>One voice, done properly. Bass, leads and squelch.</p></div>
+      <div class="card"><i style="background:var(--marigold)"></i><h3>Remembers your sounds</h3><p>Save your own patches and they are still there next time you visit.</p></div>
+      <div class="card"><i style="background:var(--teal)"></i><h3>Plays with MIDI</h3><p>Play it from a keyboard, or let MOA-SEQ play it from another tab.</p></div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="synth/index.html">Play MOA-1</a>
+    </div>
+  </div>
+</section>
+
+<section class="band sand" id="poly">
+  <div class="wrap">
+    <h2>MOA-6.</h2>
+    <p>A polyphonic synthesizer with six voices, chorus and echo, and patch banks to browse. Hold a chord and let it ring, or send it to the mixer and put it in a mix.</p>
+    <div class="cards">
+      <div class="card"><i style="background:var(--coral)"></i><h3>Six voices</h3><p>Chords, pads and stabs, with the oldest note stepping aside when you run out of fingers.</p></div>
+      <div class="card"><i style="background:var(--marigold)"></i><h3>Chorus and echo</h3><p>Wide, warm and a little wobbly, the way a pad should be.</p></div>
+      <div class="card"><i style="background:var(--teal)"></i><h3>Patch banks</h3><p>Browse the presets, tweak them and save your own.</p></div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="poly/index.html">Play MOA-6</a>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="drums">
+  <div class="wrap">
+    <h2>MOA-DR.</h2>
+    <p>A drum machine with six voices and a sixteen-step sequencer. Kick, snare, clap, two hats and a ride, each with its own tuning, decay and level. In the mixer every voice gets its own channel.</p>
+    <div class="cards">
+      <div class="card"><i style="background:var(--coral)"></i><h3>Six voices</h3><p>Every drum has its own knobs, and the hats choke each other like they should.</p></div>
+      <div class="card"><i style="background:var(--marigold)"></i><h3>Step sequencer</h3><p>Sixteen steps, patterns A and B, swing and tempo, or just follow MIDI clock.</p></div>
+      <div class="card"><i style="background:var(--teal)"></i><h3>A channel each</h3><p>Send the voices to the mixer in another tab and the kick can duck the bass.</p></div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="drums/index.html">Play MOA-DR</a>
+    </div>
+  </div>
+</section>
+
+<section class="band sand" id="pipe">
   <div class="wrap">
     <h2>MOA-PIPE.</h2>
     <p>A synth with no oscillators. Noise is blown into a tuned pipe, and the pipe rings, sings or clangs depending on how you shape the feedback. Eight voices of Karplus-Strong physical modelling, plus a spring reverb to put it in a room.</p>
@@ -161,7 +209,7 @@
   </div>
 </section>
 
-<section class="band sand" id="lynch">
+<section class="band dark" id="lynch">
   <div class="wrap">
     <h2>Lynch 106.</h2>
     <p>A six-voice polysynth in the mould of a classic analogue favourite: saw, pulse and sub oscillators, a resonant filter, one ADSR and a wide stereo chorus. A hundred and twenty-eight patch memories and a bender lever, drawn like the original panel.</p>
@@ -176,7 +224,7 @@
   </div>
 </section>
 
-<section class="band dark" id="df2">
+<section class="band sand" id="df2">
   <div class="wrap">
     <h2>MOA-DF2.</h2>
     <p>A dual dynamic filter box, inspired by a little hardware favourite and fed by the Lynch 106. Two filters with a gritty and a smooth circuit each, and both of them sing on their own when you turn the resonance up.</p>
@@ -191,7 +239,7 @@
   </div>
 </section>
 
-<section class="band sand" id="duo">
+<section class="band dark" id="duo">
   <div class="wrap">
     <h2>MOA-DUO.</h2>
     <p>A paraphonic synth with two oscillators and a dual filter you can route a dozen ways, inspired by a compact analogue favourite. Play one note or two, sync the oscillators, loop the modulators and let the reverb ring forever.</p>
@@ -206,7 +254,7 @@
   </div>
 </section>
 
-<section class="band dark" id="seq">
+<section class="band sand" id="seq">
   <div class="wrap">
     <h2>MOA-SEQ.</h2>
     <p>A generative sequencer in the spirit of a favourite hardware one. Euclidean patterns, note repeats, probability, scales and chords, sixteen tracks at once, and it plays the other instruments on this site: open them in other tabs and they just listen.</p>
