@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Smeeze Gets the Cheese</title>
+<meta name="description" content="Get the cheese before the mice do. Set traps. Mind the Guinness.">
+<meta name="theme-color" content="#120c1c">
+<meta property="og:title" content="Smeeze Gets the Cheese">
+<meta property="og:description" content="Get the cheese before the mice do. Set traps. Drink Guinness.">
+<meta property="og:image" content="https://moaswift.no/smeeze/og.png">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <script type="module" crossorigin src="./assets/index-D0hn5D-w.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-evP6MjNN.css">
+</head>
+<body>
+<div id="app">
+  <header id="hud" hidden>
+    <div class="stat"><span class="lbl">Night</span><b id="hLevel">1</b></div>
+    <div class="stat"><span class="lbl">Cheese</span><b id="hCheese">0/8</b></div>
+    <div class="stat"><span class="lbl">Stolen</span><b id="hStolen" class="pips"></b></div>
+    <div class="stat"><span class="lbl">Score</span><b id="hScore">0</b></div>
+    <button id="hMute" aria-label="Sound on or off">♪</button>
+    <button id="hPause" aria-label="Pause">❚❚</button>
+  </header>
+
+  <main id="stage">
+    <canvas id="c"></canvas>
+    <div id="pintBar" hidden><span>TIPSY</span><i></i></div>
+
+    <section id="title" class="card">
+      <svg class="sky" viewBox="0 0 360 150" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d0a2a"/><stop offset="1" stop-color="#5a3f8c"/></linearGradient></defs>
+        <rect width="360" height="150" fill="url(#g)"/>
+        <circle cx="300" cy="34" r="16" fill="#fff3c4"/>
+        <g fill="#fff" opacity=".8"><circle cx="40" cy="20" r="1.2"/><circle cx="120" cy="38" r="1"/><circle cx="210" cy="16" r="1.3"/><circle cx="260" cy="60" r="1"/><circle cx="70" cy="66" r="1"/></g>
+        <g fill="#120d24">
+          <path d="M20 128 A62 52 0 0 1 144 128 Z"/>
+          <path d="M70 128 L74 70 L78 128 Z M90 128 L94 70 L98 128 Z" opacity=".0"/>
+          <rect x="250" y="52" width="16" height="76"/><rect x="226" y="86" width="12" height="42"/><rect x="274" y="76" width="12" height="52"/>
+          <path d="M160 128 L172 108 L214 108 L222 128 Z"/>
+          <rect x="187" y="52" width="2.5" height="56"/><rect x="199" y="60" width="2.5" height="48"/><rect x="175" y="68" width="2.5" height="40"/>
+          <rect x="0" y="128" width="360" height="22"/>
+        </g>
+        <g stroke="#e8e0ff" stroke-width="1" opacity=".7"><path d="M20 128 A62 52 0 0 1 144 128" fill="none"/><path d="M82 76 V52 M60 80 L52 58 M104 80 L112 58" /></g>
+        <rect x="256" y="46" width="4" height="8" fill="#ff4d4d"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></rect>
+        <g fill="#2c2152"><path d="M0 138 q20 -5 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 V150 H0Z" opacity=".8"/></g>
+      </svg>
+      <canvas id="portrait" width="220" height="220"></canvas>
+      <h1>Smeeze <em>gets the</em> Cheese</h1>
+      <p class="tag">It is 2am, there is a Comté on the floor and the mice know it.</p>
+      <ul class="how">
+        <li><b>Grab the cheese</b> before the mice nick it and drag it down their holes.</li>
+        <li><b>Glowing</b> things are yours to grab. Anything with a dark outline is furniture: walk around it. Mice can run under the sofa, bed and tables.</li>
+        <li><b>Set traps</b> where they run. Early mice love the bait. Clever ones learn. Don't step on your own.</li>
+        <li><b>Guinness</b> gives Smeeze Dutch courage: he boots any mouse he bumps into, but he is slow and he staggers.</li>
+      </ul>
+      <button class="go" id="goStart">Start</button>
+      <p class="keys">Arrows / WASD to move · Space to set a trap · P pause · M sound</p>
+    </section>
+
+    <section id="clear" class="card small" hidden>
+      <h2 id="clearTitle">Night cleared</h2>
+      <p id="clearQuip" class="tag"></p>
+      <p class="stats" id="clearStats"></p>
+      <button class="go" id="goNext">Next night</button>
+    </section>
+
+    <section id="over" class="card small" hidden>
+      <h2>The mice win.</h2>
+      <p id="overQuip" class="tag"></p>
+      <p class="stats" id="overStats"></p>
+      <button class="go" id="goAgain">Go again</button>
+    </section>
+
+    <section id="paused" class="card small" hidden>
+      <h2>Paused</h2>
+      <p class="tag">Smeeze is having a pint.</p>
+      <button class="go" id="goResume">Resume</button>
+    </section>
+  </main>
+
+  <footer id="controls">
+    <div id="stick"><div id="knob"></div></div>
+    <button id="trapBtn"><span class="ic">🪤</span><span>Trap</span><b id="trapCount">3</b></button>
+  </footer>
+</div>
+</body>
+</html>
