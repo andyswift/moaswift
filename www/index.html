@@ -2,307 +2,193 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moa Swift</title>
-<meta name="description" content="Hello from the Moa Swifts. A little corner of the internet, and a game we made along the way.">
-<meta name="theme-color" content="#fff8ec">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moa Swift: games, synths and a record shop</title>
+<meta name="description" content="Games, synthesizers and a record shop that plays on them. Straight from the north, in your browser.">
+<meta name="theme-color" content="#07060d">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://moaswift.no/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/bricolage-grotesque-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Moa Swift">
+<meta property="og:title" content="Moa Swift: games, synths and a record shop">
+<meta property="og:description" content="Games, synthesizers and a record shop that plays on them. Straight from the north, in your browser.">
+<meta property="og:url" content="https://moaswift.no/">
+<meta property="og:image" content="https://moaswift.no/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The moa swift wordmark over a neon sun and mountains at night">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://moaswift.no/og.jpg">
+<link rel="preload" href="fonts/pirata-one-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to the content</a>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<symbol id="sq" viewBox="0 0 40 40"><path d="M5 23C5 6 35 6 35 23Z"/><circle cx="15" cy="18" r="2.6" fill="#05030a" stroke="none"/><circle cx="25" cy="18" r="2.6" fill="#05030a" stroke="none"/><g fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M11 23q-3 5 0 9t0 6"/><path d="M17 23q-3 5 0 9t0 6"/><path d="M23 23q3 5 0 9t0 6"/><path d="M29 23q3 5 0 9t0 6"/></g></symbol>
-<symbol id="cr" viewBox="0 0 40 40"><g fill-opacity=".92"><ellipse cx="20" cy="9" rx="5.5" ry="10"/><ellipse cx="20" cy="9" rx="5.5" ry="10" transform="rotate(72 20 20)"/><ellipse cx="20" cy="9" rx="5.5" ry="10" transform="rotate(144 20 20)"/><ellipse cx="20" cy="9" rx="5.5" ry="10" transform="rotate(216 20 20)"/><ellipse cx="20" cy="9" rx="5.5" ry="10" transform="rotate(288 20 20)"/></g><circle cx="20" cy="20" r="7" fill="#05030a" stroke="none"/><circle cx="20" cy="20" r="3.2" stroke="none"/></symbol>
-<symbol id="oc" viewBox="0 0 48 36"><ellipse cx="24" cy="15" rx="10" ry="8.5"/><circle cx="20" cy="14" r="2" fill="#05030a" stroke="none"/><circle cx="28" cy="14" r="2" fill="#05030a" stroke="none"/><g fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M16 13Q6 4 2 13"/><path d="M15 17Q4 17 3 28"/><path d="M17 21Q10 27 10 35"/><path d="M32 13Q42 4 46 13"/><path d="M33 17Q44 17 45 28"/><path d="M31 21Q38 27 38 35"/></g></symbol>
-<symbol id="pl" viewBox="0 0 60 40"><path d="M30 2L37 19L56 33V38L40 34L30 38L20 34L4 38V33L23 19Z"/><ellipse cx="30" cy="18" rx="2.8" ry="6" fill="#ff2a3d" stroke="none"/></symbol>
-</defs></svg>
-
-<div class="wrap">
-  <header class="top" id="top">
-    <a class="brand" href="#top"><i></i>moa swift</a>
-    <nav class="nav" aria-label="Main">
-      <a href="#game">Invaders</a>
-      <a href="#monsters">Monsters</a>
-      <a href="#tetris">Tetris</a>
-      <a href="#memes">Memes</a>
-      <a href="#mixer">The mixer</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#top">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 L38 26 L60 20 L44 36 L56 58 L32 46 L8 58 L20 36 L4 20 L26 26 Z" fill="#0b0920" stroke="#e9eef5" stroke-width="3" stroke-linejoin="miter"/><circle cx="32" cy="34" r="6" fill="#ff7a3d"/></svg>
+      <span>moa swift</span>
+    </a>
+    <nav class="nav-desk" aria-label="Main">
       <a href="#records">Records</a>
-      <a href="#synth">MOA-1</a>
-      <a href="#poly">MOA-6</a>
-      <a href="#drums">MOA-DR</a>
-      <a href="#pipe">Pipe</a>
-      <a href="#lynch">Lynch 106</a>
-      <a href="#df2">DF2</a>
-      <a href="#duo">Duo</a>
-      <a href="#seq">Seq</a>
+      <a href="#games">Games</a>
+      <a href="#studio">Studio</a>
       <a href="#music">Music</a>
+      <a class="nav-cta" href="records/index.html">Open the shop</a>
     </nav>
-  </header>
+    <details class="nav-mob">
+      <summary aria-label="Menu"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M0 1 H22 M0 8 H22 M0 15 H22" stroke="#e9eef5" stroke-width="2"/></svg></summary>
+      <nav aria-label="Main">
+        <a href="#records">Records</a>
+        <a href="#games">Games</a>
+        <a href="#studio">Studio</a>
+        <a href="#music">Music</a>
+        <a class="nav-cta" href="records/index.html">Open the shop</a>
+      </nav>
+    </details>
+  </div>
+</header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <div class="pill">moaswift.no</div>
-      <h1>Hello from the <span>Moa Swifts.</span></h1>
-      <p class="lede">A little corner of the internet, and a game we made along the way.</p>
-      <div class="actions">
-        <a class="btn" href="invaders/index.html">Play the game</a>
-        <a class="btn ghost" href="#music">Some music</a>
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="scene" aria-hidden="true">
+    <div class="aurora a1"></div><div class="aurora a2"></div><div class="aurora a3"></div>
+    <svg class="stars" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMin slice"><g fill="#e9eef5"><circle cx="120" cy="90" r="1.6"/><circle cx="260" cy="170" r="1.2"/><circle cx="380" cy="60" r="1.8"/><circle cx="520" cy="140" r="1"/><circle cx="640" cy="52" r="1.4"/><circle cx="760" cy="196" r="1.2"/><circle cx="900" cy="80" r="1.8"/><circle cx="1010" cy="160" r="1"/><circle cx="1120" cy="48" r="1.5"/><circle cx="1240" cy="130" r="1.2"/><circle cx="1330" cy="76" r="1.8"/><circle cx="70" cy="250" r="1"/><circle cx="1380" cy="240" r="1.2"/><circle cx="590" cy="250" r="1"/><circle cx="1180" cy="260" r="1"/></g></svg>
+    <svg class="sun" viewBox="0 0 420 320">
+      <defs>
+        <linearGradient id="sunfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd24a"/><stop offset="0.55" stop-color="#ff7a3d"/><stop offset="1" stop-color="#ff2e93"/></linearGradient>
+        <mask id="sunstripes"><rect width="420" height="320" fill="#fff"/><rect y="190" width="420" height="6" fill="#000"/><rect y="220" width="420" height="9" fill="#000"/><rect y="250" width="420" height="12" fill="#000"/><rect y="282" width="420" height="16" fill="#000"/></mask>
+      </defs>
+      <circle cx="210" cy="210" r="210" fill="url(#sunfill)" mask="url(#sunstripes)"/>
+    </svg>
+    <svg class="range" viewBox="0 0 1440 240" preserveAspectRatio="none"><path d="M0 240 L0 120 L70 70 L120 105 L200 30 L270 90 L330 60 L420 140 L500 100 L560 150 L620 130 L700 170 L760 150 L830 125 L900 160 L980 90 L1050 135 L1120 70 L1200 120 L1260 40 L1340 100 L1400 80 L1440 110 L1440 240 Z" fill="#1c1236"/><path d="M0 240 L0 170 L90 120 L150 160 L240 90 L310 150 L390 130 L470 185 L560 170 L650 205 L760 190 L870 210 L960 170 L1040 195 L1130 140 L1210 180 L1290 110 L1360 160 L1440 140 L1440 240 Z" fill="#110b26"/></svg>
+    <svg class="grid" viewBox="0 0 1440 270" preserveAspectRatio="none"><rect width="1440" height="270" fill="#0a0618"/><g stroke="#ff2e93" stroke-opacity="0.55" stroke-width="1.5" fill="none" vector-effect="non-scaling-stroke"><path d="M720 0 L-800 270 M720 0 L-500 270 M720 0 L-200 270 M720 0 L100 270 M720 0 L400 270 M720 0 L720 270 M720 0 L1040 270 M720 0 L1340 270 M720 0 L1640 270 M720 0 L1940 270 M720 0 L2240 270"/><path d="M0 14 H1440 M0 34 H1440 M0 60 H1440 M0 94 H1440 M0 138 H1440 M0 196 H1440 M0 270 H1440"/></g><rect width="1440" height="26" fill="#ff2e93" opacity="0.14"/></svg>
+    <svg class="fjord" viewBox="0 0 1440 300" preserveAspectRatio="none"><path d="M0 300 L0 60 L60 20 L120 90 L190 40 L260 140 L330 200 L380 300 Z" fill="#05040a"/><path d="M1440 300 L1440 40 L1370 90 L1310 10 L1240 110 L1180 180 L1120 300 Z" fill="#05040a"/></svg>
+  </div>
+  <div class="hero-in">
+    <h1 class="wordmark">
+      <svg viewBox="0 0 390 96" role="img" aria-label="moa swift">
+        <g fill="none" stroke="#eef3fa" stroke-width="7" stroke-linejoin="miter" stroke-miterlimit="10">
+          <path d="M6 70 V38 L16 30 L26 38 V70 M26 38 L36 30 L46 38 V70"/>
+          <path d="M62 52 L80 32 L98 52 L80 72 Z"/>
+          <path d="M114 72 L132 32 L150 72 M120 58 H144"/>
+          <path d="M216 36 H192 L186 48 L214 58 L206 72 H182"/>
+          <path d="M232 34 L244 72 L256 46 L268 72 L280 34"/>
+          <path d="M302 38 V72"/>
+          <path d="M340 12 L330 20 V72 M322 38 H344"/>
+          <path d="M368 14 V64 L376 72 M360 38 H378"/>
+        </g>
+        <g fill="#eef3fa">
+          <polygon points="2,70 10,70 6,86"/><polygon points="22,70 30,70 26,86"/><polygon points="42,70 50,70 46,86"/>
+          <polygon points="110,72 118,72 114,88"/><polygon points="146,72 154,72 150,88"/>
+          <polygon points="228,34 236,34 232,18"/><polygon points="276,34 284,34 280,18"/>
+          <polygon points="302,6 295,28 309,28"/><polygon points="298,72 306,72 302,88"/>
+          <polygon points="362,66 370,66 366,82"/>
+        </g>
+      </svg>
+    </h1>
+    <p class="tag">Games, synths and a record shop that plays on them. Straight from the north, in your browser.</p>
+    <p class="cta">
+      <a class="btn btn-hot" href="records/index.html">Open the record shop</a>
+      <a class="btn btn-ghost" href="#games">Play a game</a>
+    </p>
+  </div>
+</section>
+
+<section class="block" id="records">
+  <div class="wrap">
+    <div class="feature">
+      <div class="feature-text">
+        <p class="eyebrow">New · MOA Records</p>
+        <h2>Pick a sleeve. The band plays.</h2>
+        <p>A record shop for synthesizers. Four original tunes, eight instruments waking up in the back room, every sound made live in your browser. Best on a computer.</p>
+        <p><a class="btn btn-frost" href="records/index.html">Open the crate</a></p>
+      </div>
+      <div class="sleeves" aria-hidden="true">
+        <svg class="sl s1" viewBox="0 0 250 250"><rect width="250" height="250" fill="#ff7a3d"/><circle cx="125" cy="150" r="78" fill="#ffd25e"/><g fill="#ff7a3d"><rect y="130" width="250" height="7"/><rect y="148" width="250" height="9"/><rect y="168" width="250" height="11"/><rect y="190" width="250" height="14"/></g><rect y="204" width="250" height="46" fill="#3a1d46"/></svg>
+        <svg class="sl s2" viewBox="0 0 250 250"><rect width="250" height="250" fill="#1f7a74"/><circle cx="95" cy="120" r="70" fill="#ff8fb1" fill-opacity=".85"/><circle cx="150" cy="105" r="62" fill="#fff4df" fill-opacity=".8"/><circle cx="128" cy="165" r="55" fill="#ffc23d" fill-opacity=".8"/></svg>
+        <svg class="sl s3" viewBox="0 0 250 250"><rect width="250" height="250" fill="#3a1d6e"/><g stroke="#59d8e6" stroke-opacity=".35" stroke-width="2"><path d="M0 170H250M0 195H250M0 225H250M30 155V250M85 155V250M140 155V250M195 155V250M245 155V250"/></g><path d="M30 160L98 45L166 160Z" fill="#ff4fa3"/><path d="M90 175L158 60L226 175Z" fill="#59d8e6" fill-opacity=".85"/></svg>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="hero-art">
-      <span class="dot sun"></span><span class="dot coral"></span><span class="dot teal"></span>
-      <a class="arcade" href="invaders/index.html" aria-label="Play Space Invaders: The Upside Down Odyssey">
-        <div class="hud"><span>SCORE 004380</span><b>HI 012450</b></div>
-        <div class="logo"><small>SPACE</small><strong>INVADERS</strong></div>
-        <div class="rows" aria-hidden="true">
-          <div class="row">
-            <svg class="jelly" width="30" height="30" viewBox="0 0 40 40"><use href="#sq"/></svg><svg class="jelly" width="30" height="30" viewBox="0 0 40 40"><use href="#sq"/></svg><svg class="jelly" width="30" height="30" viewBox="0 0 40 40"><use href="#sq"/></svg><svg class="jelly" width="30" height="30" viewBox="0 0 40 40"><use href="#sq"/></svg><svg class="jelly" width="30" height="30" viewBox="0 0 40 40"><use href="#sq"/></svg>
-          </div>
-          <div class="row">
-            <svg class="demo" width="30" height="30" viewBox="0 0 40 40"><use href="#cr"/></svg><svg class="demo" width="30" height="30" viewBox="0 0 40 40"><use href="#cr"/></svg><svg class="demo" width="30" height="30" viewBox="0 0 40 40"><use href="#cr"/></svg><svg class="demo" width="30" height="30" viewBox="0 0 40 40"><use href="#cr"/></svg><svg class="demo" width="30" height="30" viewBox="0 0 40 40"><use href="#cr"/></svg>
-          </div>
-          <div class="row wide">
-            <svg class="spider" width="34" height="26" viewBox="0 0 48 36"><use href="#oc"/></svg><svg class="spider" width="34" height="26" viewBox="0 0 48 36"><use href="#oc"/></svg><svg class="spider" width="34" height="26" viewBox="0 0 48 36"><use href="#oc"/></svg><svg class="spider" width="34" height="26" viewBox="0 0 48 36"><use href="#oc"/></svg><svg class="spider" width="34" height="26" viewBox="0 0 48 36"><use href="#oc"/></svg>
-          </div>
-        </div>
-        <div class="floor" aria-hidden="true"><svg class="ship" width="46" height="31" viewBox="0 0 60 40"><use href="#pl"/></svg></div>
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="head"><h2>Games</h2><p class="note">Keyboard or touch · runs in the browser</p></div>
+    <div class="tiles">
+      <a class="tile" href="invaders/index.html">
+        <svg class="ico" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1a1236"/><path d="M32 14 L44 44 L32 38 L20 44 Z" fill="#2de2e6"/><circle cx="14" cy="16" r="2" fill="#ff2e93"/><circle cx="50" cy="22" r="2" fill="#ff2e93"/><circle cx="24" cy="10" r="1.6" fill="#ffd24a"/></svg>
+        <span class="t-body"><span class="t-name">Upside Down Odyssey</span><span class="t-line">A retro arcade shooter in a neon glow. Clear the waves and chase the high score.</span><span class="go">Play</span></span>
+      </a>
+      <a class="tile" href="monsters/index.html">
+        <svg class="ico" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1a1236"/><rect x="10" y="38" width="44" height="6" fill="#5cffb1"/><rect x="10" y="48" width="44" height="6" fill="#2a2150"/><circle cx="32" cy="28" r="9" fill="#ff7a3d"/><rect x="24" y="22" width="3" height="3" fill="#07060d"/><rect x="36" y="22" width="3" height="3" fill="#07060d"/></svg>
+        <span class="t-body"><span class="t-name">Stranger Monsters</span><span class="t-line">Dig holes, trap the monsters and whack them through the floor before the air runs out.</span><span class="go">Play</span></span>
+      </a>
+      <a class="tile" href="tetris/index.html">
+        <svg class="ico" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1a1236"/><rect x="16" y="12" width="12" height="12" fill="#ff2e93"/><rect x="16" y="26" width="12" height="12" fill="#ff2e93"/><rect x="16" y="40" width="12" height="12" fill="#ff2e93"/><rect x="30" y="40" width="12" height="12" fill="#ffd24a"/><rect x="44" y="40" width="8" height="12" fill="#2de2e6"/></svg>
+        <span class="t-body"><span class="t-name">Cali Tetris</span><span class="t-line">Falling blocks the handheld way, with a lo-fi beat that speeds up as you climb.</span><span class="go">Play</span></span>
+      </a>
+      <a class="tile" href="memes/index.html">
+        <svg class="ico" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1a1236"/><path d="M12 14 H52 V42 H34 L24 52 V42 H12 Z" fill="#ffd24a"/><rect x="19" y="23" width="26" height="3" fill="#07060d"/><rect x="19" y="30" width="16" height="3" fill="#07060d"/></svg>
+        <span class="t-body"><span class="t-name">memes!</span><span class="t-line">Five classic formats, your joke, and the whole meme lives in the link.</span><span class="go">Make one</span></span>
       </a>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 
-<section class="band sand" id="game">
+<section class="block" id="studio">
   <div class="wrap">
-    <h2>Space Invaders, with a twist.</h2>
-    <p>A retro arcade shooter in an Upside Down glow. Clear the waves, catch the mystery saucer, and chase the high score.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Plays in your browser</h3><p>Nothing to download or install. Just press play.</p></div>
-      <div class="card"><i style="background:var(--coral)"></i><h3>Keyboard or touch</h3><p>Arrow keys and space on a computer, on-screen buttons on a phone.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Beat your best</h3><p>Your high score is saved in your browser for next time.</p></div>
+    <div class="head"><h2>Studio</h2><p class="note">Synths, drums and a mixer · all in the browser</p></div>
+    <h3 class="group">Synths</h3>
+    <div class="minis">
+      <a class="mini" href="synth/index.html"><img src="synth/synth-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-1</span><span class="m-line">Mono synth, fat and simple.</span></a>
+      <a class="mini" href="poly/index.html"><img src="poly/poly-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-6</span><span class="m-line">Six voices, chorus and echo.</span></a>
+      <a class="mini" href="lynch/index.html"><img src="lynch/lynch-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">Lynch 106</span><span class="m-line">Classic chorus polysynth.</span></a>
+      <a class="mini" href="duo/index.html"><img src="duo/duo-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-DUO</span><span class="m-line">Paraphonic, dual filter.</span></a>
+      <a class="mini" href="pipe/index.html"><img src="pipe/pipe-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-PIPE</span><span class="m-line">Pluck, blow or strike a pipe.</span></a>
     </div>
-    <div class="actions">
-      <a class="btn" href="invaders/index.html">Play now</a>
-      <a class="btn ghost" href="invaders-3d/index.html">Try the 3D version</a>
+    <h3 class="group">Drums, filters and mixing</h3>
+    <div class="minis">
+      <a class="mini" href="drums/index.html"><img src="drums/drums-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-DR</span><span class="m-line">Drum machine, six voices.</span></a>
+      <a class="mini" href="df2/index.html"><img src="df2/df2-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-DF2</span><span class="m-line">Dual dynamic filter box.</span></a>
+      <a class="mini" href="mixer/index.html"><img src="mixer/favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">The mixer</span><span class="m-line">Listens to every tab.</span></a>
+      <a class="mini" href="seq/index.html"><img src="seq/seq-favicon.svg" width="44" height="44" alt="" loading="lazy"><span class="m-name">MOA-SEQ</span><span class="m-line">Generative sequencer.</span></a>
     </div>
   </div>
 </section>
 
-<section class="band dark" id="monsters">
+<section class="block" id="music">
   <div class="wrap">
-    <h2>Stranger Monsters.</h2>
-    <p>A homage to the 1983 BBC Micro classic. Dig holes, trap the Demodogs, and whack them through the floor before the air runs out. Three levels, from Hawkins Lab to the Upside Down.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Dig. Trap. Whack.</h3><p>Stand next to a trapped monster and press space to drop it a floor.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Keyboard play</h3><p>Arrow keys or WASD to move, space to dig. It plays in your browser.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Beat your best</h3><p>Your high score is saved in your browser for next time.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="monsters/index.html">Play Monsters</a>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="tetris">
-  <div class="wrap">
-    <h2>Cali Tetris.</h2>
-    <p>Falling blocks the way the handheld did it, under a Venice Beach sunset. One-piece preview, no hold, no hard drop, and a lo-fi hip-hop beat that speeds up as you climb.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Handheld rules</h3><p>A 10 by 18 well, no wall kicks and the classic scoring. Pick a start level from 0 to 9.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Original beat</h3><p>Boom-bap drums, a dusty keys loop and a lead line, all made live in your browser.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Phone friendly</h3><p>Arrow keys on a computer, on-screen buttons on a phone. Your best score is saved.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="tetris/index.html">Play Cali Tetris</a>
+    <div class="player" data-mixcloud="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fashton-ron%2Fsild%2F&amp;hide_cover=1&amp;autoplay=1">
+      <div class="p-text">
+        <h2>Some music</h2>
+        <p>Sild · a mix by Ashton Ron · 1 h 25 min</p>
+      </div>
+      <div class="p-actions">
+        <a class="mix-link" href="https://www.mixcloud.com/ashton-ron/sild/">Listen on Mixcloud</a>
+        <button class="btn btn-cyan mix-play" type="button" hidden>Play it here</button>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="band dark" id="memes">
-  <div class="wrap">
-    <h2>memes!</h2>
-    <p>Pick one of five classic formats, type your joke and send it. The whole meme lives in the link, so there is nothing to sign up for. All the art is drawn from scratch.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Five classics</h3><p>Yes / No, Distracted, Two Buttons, Big Brain and Change My Mind.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>The link is the meme</h3><p>Copy the link and your captions travel with it. No server, no account.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Save the picture</h3><p>Download a square PNG, or share it straight from your phone.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="memes/index.html">Make a meme</a>
-    </div>
-  </div>
-</section>
+</main>
 
-<section class="band sand" id="mixer">
-  <div class="wrap">
-    <h2>A little studio in your browser.</h2>
-    <p>A mixing console that listens to the other tabs. Open the synths and the drum machine on their own pages, press Start audio on each, and their sound arrives on the mixer's channel strips, ready for EQ, effects and a mix. It all runs live in your browser, with nothing to install.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Your tabs, wired up</h3><p>Every instrument page sends its sound to the mixer over the browser itself. Close a tab and the strip waits for it to come back.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>A proper mixer</h3><p>Eight mono channels and four stereo inputs with EQ, six aux sends and three stereo buses, plus reverb, delay, granular, a bus compressor that ducks to the kick, and Ouroboros.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Plays with MIDI</h3><p>Connect a MIDI keyboard or controller in Chrome or Edge. It follows MIDI clock too.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="mixer/index.html">Open the mixer</a>
-    </div>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© Moa Swift</span>
+    <svg width="220" height="36" viewBox="0 0 220 36" aria-hidden="true"><path d="M0 36 L20 12 L34 26 L56 2 L82 30 L100 16 L126 34 L150 8 L172 28 L194 14 L220 36 Z" fill="#17102e"/></svg>
+    <span>moaswift.no</span>
   </div>
-</section>
-
-<section class="band dark" id="records">
-  <div class="wrap">
-    <h2>MOA Records.</h2>
-    <p>A record shop for synthesizers. Flip through the crate, pick a sleeve and drop the needle: the instruments wake up in the back room, set themselves up and play the tune. Every sound you hear is made live in your browser.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Pick a sleeve</h3><p>Four original tunes to start with, from liquid drum and bass to dreamy trance, each with its own hand-drawn sleeve.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>A band in the room</h3><p>The mixer and seven synths load behind the scenes and play together: bass, pads, leads, drums and a filter that sweeps.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Built for desktop</h3><p>Eight synthesizers run in one tab, so it needs desktop Chrome or a similar browser.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="records/index.html">Open the crate</a>
-    </div>
-  </div>
-</section>
-
-<section class="band sand" id="synth">
-  <div class="wrap">
-    <h2>MOA-1.</h2>
-    <p>A mono synthesizer with a big keyboard, patch memories and a front panel full of things to turn. Play it on its own, or let it send its sound to the mixer in another tab.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Fat and simple</h3><p>One voice, done properly. Bass, leads and squelch.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Remembers your sounds</h3><p>Save your own patches and they are still there next time you visit.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Plays with MIDI</h3><p>Play it from a keyboard, or let MOA-SEQ play it from another tab.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="synth/index.html">Play MOA-1</a>
-    </div>
-  </div>
-</section>
-
-<section class="band dark" id="poly">
-  <div class="wrap">
-    <h2>MOA-6.</h2>
-    <p>A polyphonic synthesizer with six voices, chorus and echo, and patch banks to browse. Hold a chord and let it ring, or send it to the mixer and put it in a mix.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Six voices</h3><p>Chords, pads and stabs, with the oldest note stepping aside when you run out of fingers.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Chorus and echo</h3><p>Wide, warm and a little wobbly, the way a pad should be.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Patch banks</h3><p>Browse the presets, tweak them and save your own.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="poly/index.html">Play MOA-6</a>
-    </div>
-  </div>
-</section>
-
-<section class="band sand" id="drums">
-  <div class="wrap">
-    <h2>MOA-DR.</h2>
-    <p>A drum machine with six voices and a sixteen-step sequencer. Kick, snare, clap, two hats and a ride, each with its own tuning, decay and level. In the mixer every voice gets its own channel.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Six voices</h3><p>Every drum has its own knobs, and the hats choke each other like they should.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Step sequencer</h3><p>Sixteen steps, patterns A and B, swing and tempo, or just follow MIDI clock.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>A channel each</h3><p>Send the voices to the mixer in another tab and the kick can duck the bass.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="drums/index.html">Play MOA-DR</a>
-    </div>
-  </div>
-</section>
-
-<section class="band dark" id="pipe">
-  <div class="wrap">
-    <h2>MOA-PIPE.</h2>
-    <p>A synth with no oscillators. Noise is blown into a tuned pipe, and the pipe rings, sings or clangs depending on how you shape the feedback. Eight voices of Karplus-Strong physical modelling, plus a spring reverb to put it in a room.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Pluck, blow or strike</h3><p>Sixteen patches from nylon strings and marimbas to pan flutes, reed organs and a steam drone.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Spring reverb</h3><p>Length, tension, drip, tilt and dwell, with a dry/wet mix so it sits behind the pipe.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Plays with MIDI</h3><p>Velocity, pitch bend, mod wheel and sustain pedal in Chrome or Edge, or just use the keyboard on screen.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="pipe/index.html">Play MOA-PIPE</a>
-    </div>
-  </div>
-</section>
-
-<section class="band sand" id="lynch">
-  <div class="wrap">
-    <h2>Lynch 106.</h2>
-    <p>A six-voice polysynth in the mould of a classic analogue favourite: saw, pulse and sub oscillators, a resonant filter, one ADSR and a wide stereo chorus. A hundred and twenty-eight patch memories and a bender lever, drawn like the original panel.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Chorus I and II</h3><p>Switch it off, pick either side or hold both for the fast, shallow shimmer.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>128 memories</h3><p>Two groups of eight banks of eight patches. Write your own into any slot.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>The bender</h3><p>Drag the lever to bend the pitch, push it forward for vibrato. It springs back like the real thing.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="lynch/index.html">Play Lynch 106</a>
-    </div>
-  </div>
-</section>
-
-<section class="band dark" id="df2">
-  <div class="wrap">
-    <h2>MOA-DF2.</h2>
-    <p>A dual dynamic filter box, inspired by a little hardware favourite and fed by the Lynch 106. Two filters with a gritty and a smooth circuit each, and both of them sing on their own when you turn the resonance up.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Eight filter types</h3><p>Low-pass, band-pass, high-pass and notch, plus hybrids with two peaks. Pick one per filter.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Dynamic</h3><p>The level of what you play can open the envelopes. Add a looping envelope, a sample-and-hold and a crunchy delay.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Play the Lynch</h3><p>The polysynth sits on top: its left side feeds one filter and its right side the other.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="df2/index.html">Play MOA-DF2</a>
-    </div>
-  </div>
-</section>
-
-<section class="band sand" id="duo">
-  <div class="wrap">
-    <h2>MOA-DUO.</h2>
-    <p>A paraphonic synth with two oscillators and a dual filter you can route a dozen ways, inspired by a compact analogue favourite. Play one note or two, sync the oscillators, loop the modulators and let the reverb ring forever.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Two voices in one</h3><p>Hold two keys and each oscillator takes one. Sync them for the classic tearing lead.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Routable filters</h3><p>Series, parallel, split or bypassed. Both filters sing on their own when you push the resonance.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Infinite reverb</h3><p>Turn the decay all the way up and a chord hangs in the air until you change it.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="duo/index.html">Play MOA-DUO</a>
-    </div>
-  </div>
-</section>
-
-<section class="band dark" id="seq">
-  <div class="wrap">
-    <h2>MOA-SEQ.</h2>
-    <p>A generative sequencer in the spirit of a favourite hardware one. Euclidean patterns, note repeats, probability, scales and chords, sixteen tracks at once, and it plays the other instruments on this site: open them in other tabs and they just listen.</p>
-    <div class="cards">
-      <div class="card"><i style="background:var(--coral)"></i><h3>Patterns that grow</h3><p>Steps, pulses and rotation, on any division from whole notes to triplets. Different lengths per track make polyrhythms.</p></div>
-      <div class="card"><i style="background:var(--marigold)"></i><h3>Alive</h3><p>Repeats that speed up and ramp, chance, groove templates and micro-timing keep a loop from ever feeling pasted.</p></div>
-      <div class="card"><i style="background:var(--teal)"></i><h3>Plays your tabs</h3><p>Lynch, Duo, DF2 and Pipe pick up the notes over a MIDI bus. Or send it out to real hardware.</p></div>
-    </div>
-    <div class="actions">
-      <a class="btn" href="seq/index.html">Play MOA-SEQ</a>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="music">
-  <div class="wrap music">
-    <div class="music-text">
-      <h2>Some music.</h2>
-      <p>A mix from the archive. Press play and keep reading.</p>
-    </div>
-    <div class="player" data-mixcloud="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fashton-ron%2Fsild%2F&amp;hide_cover=1&amp;light=1&amp;autoplay=1">
-      <strong>Sild</strong>
-      <span>A mix by Ashton Ron · 1 h 25 min</span>
-      <a class="btn mix-link" href="https://www.mixcloud.com/ashton-ron/sild/">Listen on Mixcloud</a>
-      <button class="btn mix-play" type="button" hidden>Play it here</button>
-    </div>
-  </div>
-</section>
-
-<div class="wrap">
-  <footer><span>© Moa Swift</span><span>moaswift.no</span></footer>
-</div>
+</footer>
 
 <script>
 // The Mixcloud player only loads when someone asks for it, so the page itself makes no third-party requests.
@@ -311,7 +197,6 @@ document.querySelectorAll('[data-mixcloud]').forEach(function (box) {
   var link = box.querySelector('.mix-link');
   if (!play) return;
   play.hidden = false;
-  link.className = 'mix-link-text';
   link.textContent = 'or listen on Mixcloud';
   play.addEventListener('click', function () {
     var f = document.createElement('iframe');
@@ -319,6 +204,7 @@ document.querySelectorAll('[data-mixcloud]').forEach(function (box) {
     f.title = 'Mixcloud player: Sild';
     f.allow = 'encrypted-media; autoplay';
     box.replaceChildren(f);
+    box.classList.add('playing');
   });
 });
 </script>
